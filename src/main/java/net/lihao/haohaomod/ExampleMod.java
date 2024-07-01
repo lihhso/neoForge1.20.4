@@ -1,5 +1,6 @@
 package net.lihao.haohaomod;
 import com.mojang.logging.LogUtils;
+import net.lihao.haohaomod.block.ModBlocks;
 import net.lihao.haohaomod.item.ModCreativeTab;
 import net.lihao.haohaomod.item.Moditems;
 import net.neoforged.bus.api.IEventBus;
@@ -23,6 +24,7 @@ public class ExampleMod {
         modEventBus.addListener(this::commonSetup);
         Moditems.register(modEventBus);
         ModCreativeTab.register(modEventBus);
+        ModBlocks.register(modEventBus);
         NeoForge.EVENT_BUS.register(this);
     }
 

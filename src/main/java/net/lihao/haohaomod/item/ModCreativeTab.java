@@ -1,6 +1,7 @@
 package net.lihao.haohaomod.item;
 
 import net.lihao.haohaomod.ExampleMod;
+import net.lihao.haohaomod.block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -22,6 +23,7 @@ public class ModCreativeTab {
             .icon(()->Moditems.RUBY.get().getDefaultInstance())
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(Moditems.RUBY.get());
+                pOutput.accept(ModBlocks.RUBY_BLOCK.get());
             })
             .build());
 
