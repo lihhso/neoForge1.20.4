@@ -25,6 +25,7 @@ public class ModCreativeTab {
                 pOutput.accept(Moditems.RUBY.get());
                 pOutput.accept(ModBlocks.RUBY_BLOCK.get());
                 pOutput.accept(ModBlocks.LAMP_BLOCK.get());
+                pOutput.accept(Moditems.MAGIC_INGOT.get());
             })
             .build());
 
