@@ -24,6 +24,7 @@ public class ModCreativeTab {
             .displayItems((pParameters, pOutput) -> {
                 pOutput.accept(Moditems.RUBY.get());
                 pOutput.accept(ModBlocks.RUBY_BLOCK.get());
+                pOutput.accept(ModBlocks.LAMP_BLOCK.get());
             })
             .build());
 
